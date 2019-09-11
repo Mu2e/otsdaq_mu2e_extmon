@@ -1,6 +1,6 @@
 #include "otsdaq-mu2e-extmon/FEInterfaces/ROCExtinctionMonitorInterface.h"
 
-#include "otsdaq-core/Macros/InterfacePluginMacros.h"
+#include "otsdaq/Macros/InterfacePluginMacros.h"
 
 using namespace ots;
 
