@@ -14,7 +14,7 @@ ROCExtinctionMonitorInterface::ROCExtinctionMonitorInterface(
     const std::string&       theConfigurationPath)
     : ROCCoreVInterface(rocUID, theXDAQContextConfigTree, theConfigurationPath)
 {
-	INIT_MF("ROCExtinctionMonitorInterface");
+	INIT_MF("." /*directory used is USER_DATA/LOG/.*/);
 
 	__MCOUT_INFO__("ROCExtinctionMonitorInterface instantiated with link: "
 	               << linkID_ << " and EventWindowDelayOffset = " << delay_ << __E__);
