@@ -1,6 +1,3 @@
-include_directories(${MPI_INCLUDE_PATH})
-
-
 cet_make(LIBRARY_NAME DetectorReader
 		 LIBRARIES
 		 ${ARTDAQ_APPLICATION}
@@ -15,7 +12,7 @@ cet_make(LIBRARY_NAME DetectorReader
 		 ${MF_UTILITIES}
          	 ${XDAQ_BASIC_LIB_LIST}
 	         ${ROOT_CORE}
-         	 $ENV{XERCES_C_LIB}/libxerces-c.so
+		 ${XDAQ_XERCES-C}
          	 SOAPUtilities
 		 ConfigurationDataFormats
 		 ConfigurationInterface
