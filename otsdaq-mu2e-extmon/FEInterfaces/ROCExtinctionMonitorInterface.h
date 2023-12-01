@@ -46,6 +46,8 @@ class ROCExtinctionMonitorInterface : public ROCCoreVInterface
 
 	virtual int  							readDTCLinkLossCounter	(void) override;
 	virtual void 							resetDTCLinkLossCounter	(void) override;
+	virtual void							GetStatus				(void) override { return; }
+	virtual void							GetFirmwareVersion		(void) override { return; }
 
 	// clang-format on
 };
