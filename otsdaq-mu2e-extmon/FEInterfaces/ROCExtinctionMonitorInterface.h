@@ -40,14 +40,12 @@ class ROCExtinctionMonitorInterface : public ROCCoreVInterface
 
 
 	// specific ROC functions
-	virtual int  							readTimestamp			(void) override;
-	virtual void 							writeDelay				(uint16_t delay) override;  // 5ns steps
-	virtual int  							readDelay				(void) override;            // 5ns steps
+	// virtual int  							readInjectedPulseTimestamp			(void) override;
+	// virtual void 							writeDelay				(uint16_t delay) override;  // 5ns steps
+	// virtual int  							readDelay				(void) override;            // 5ns steps
 
-	virtual int  							readDTCLinkLossCounter	(void) override;
-	virtual void 							resetDTCLinkLossCounter	(void) override;
-	virtual void							GetStatus				(void) override { return; }
-	virtual void							GetFirmwareVersion		(void) override { return; }
+	// virtual int  							readDTCLinkLossCounter	(void) override;
+	// virtual void 							resetDTCLinkLossCounter	(void) override;
 
 	// clang-format on
 };

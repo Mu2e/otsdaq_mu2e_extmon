@@ -69,32 +69,6 @@ uint16_t ROCExtinctionMonitorInterface::readEmulatorRegister(uint16_t address)
 }
 
 //==================================================================================================
-int ROCExtinctionMonitorInterface::readTimestamp() { return this->readRegister(12); }
-
-//==================================================================================================
-void ROCExtinctionMonitorInterface::writeDelay(uint16_t delay)
-{
-	this->writeRegister(21, delay);
-	return;
-}
-
-//==================================================================================================
-int ROCExtinctionMonitorInterface::readDelay() { return this->readRegister(7); }
-
-//==================================================================================================
-int ROCExtinctionMonitorInterface::readDTCLinkLossCounter()
-{
-	return this->readRegister(8);
-}
-
-//==================================================================================================
-void ROCExtinctionMonitorInterface::resetDTCLinkLossCounter()
-{
-	this->writeRegister(24, 0x1);
-	return;
-}
-
-//==================================================================================================
 void ROCExtinctionMonitorInterface::configure(void) try
 {
 	__MCOUT_INFO__(".... do nothing for TEM ROC... ");
